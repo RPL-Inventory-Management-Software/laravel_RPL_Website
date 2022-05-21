@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::resource('item', 'App\Http\Controllers\ItemController');
+
 Route::get('/login', function () {
     return view('login');
 });
